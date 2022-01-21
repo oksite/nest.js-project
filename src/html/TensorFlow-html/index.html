@@ -1,0 +1,73 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TensorFlow</title>
+    <script src="./tf.js"></script>
+    <script src="./tfjs-vis.js"></script>
+    <script src="./script.js"></script>
+</head>
+<body>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TensorFlow</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+            overflow: hidden;
+            margin: 10px auto;
+            width: 600px;
+        }
+
+        li {
+            float: left;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 50%;
+            color: #ccc;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <div class="history">
+        <h3>history</h3>
+        <!-- <ul v-for="item in items">
+            <li class="date"><span v-text="item.data"></span>ti</li>
+            <li class="pullleft red" v-for="red in item.value[0]" v-text="('0'+red).slice(-2)"></li>
+            <li class="pullleft blue" v-text="('0'+item.value[1][0]).slice(-2)"></li>
+        </ul> -->
+    </div>
+    <div class="result">
+        <h3>time out<span v-text="useTime+''"></span></h3>
+        <ul>
+            <li class="date">result:</li>
+            <li class="pullleft red" v-for="red in redBalls" v-text="('0'+red).slice(-2)"></li>
+            <li class="pullleft blue" v-text="('0'+blueBalls[0]).slice(-2)"></li>
+        </ul>
+        <button @click="forecast()">play</button>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.min.js"></script>
+<script src="https://cdn.bootcss.com/axios/0.18.0/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+<script src="./script.js"></script>
+</body>
+</html>
